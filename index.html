@@ -1,32 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo intermedio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    login-icon: <i class="bi bi-person"></i>
-    chevron: <i class="bi bi-chevron-down"></i>
-    lupita: <i class="bi bi-search"></i>
     <header>
         <div class="header-container">
-            <div class="navigation-icon"></div>
-            <div class="navigation-section-main">
+            <div class="navigation-section__left">
+                <div class="navigation-icon">
+                    <img src="./icons/h-hostinger.svg" alt="Hostinger" class="icon-h-hostinger">
+                </div>
                 <div class="navigation-section__start">
                     <a href="" class="menu-navigation">Pricing</a>
-                    <a href="" class="menu-navigation">Products</a>
-                    <a href="" class="menu-navigation">Resources</a>
+                    <a href="" class="menu-navigation">Products <svg data-v-f43039ca="" class="icon-down" aria-hidden="true" style="color: var(--h-fg-neutral-default); width: 18px; height: 18px;" fill="#18181A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><g><path fill="currentColor" d="M17.957 10.457a1 1 0 0 0-1.414-1.414L12 13.586 7.457 9.043a1 1 0 0 0-1.414 1.414l5.25 5.25a1 1 0 0 0 1.414 0z"></path></g></svg></a>
+                    <a href="" class="menu-navigation">Resources <svg data-v-f43039ca="" class="icon-down" aria-hidden="true" style="color: var(--h-fg-neutral-default); width: 18px; height: 18px;" fill="#18181A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><g><path fill="currentColor" d="M17.957 10.457a1 1 0 0 0-1.414-1.414L12 13.586 7.457 9.043a1 1 0 0 0-1.414 1.414l5.25 5.25a1 1 0 0 0 1.414 0z"></path></g></svg></a>
                 </div>
-                <div class="navigation-section__right">
-                    <button class="ask-btn"></button>
-                    <button class="language-btn"></button>
-                    <a href="" class="login-icon"></a>
+            </div>
+            <div class="navigation-section__right">
+                <div class="gradient-btn">
+                    <button class="ask-btn"><svg data-v-f43039ca="" data-v-25b9c511="" class="h-icon chatbot-btn__icon" aria-hidden="true" style="color: var(--h-color-neutral-900); width: 24px; height: 24px;" fill="#18181A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ic-kodee-24"><path fill="#331C74" d="M8.619 8.185v7.63l-4.36 4.361v-5.45L6.984 12 4.259 9.276v-5.45zM16.402 12.681l-6.609 3.816-1.596 5.956 4.72-2.725.998-3.723 3.723.997 4.72-2.725zM16.402 11.323 9.793 7.507 8.197 1.55l4.72 2.725.998 3.723 3.723-.997 4.72 2.725z"></path></symbol></defs><g><path fill="#333" d="M8.619 8.185v7.63l-4.36 4.361v-5.45L6.984 12 4.259 9.276v-5.45zM16.402 12.681l-6.609 3.816-1.596 5.956 4.72-2.725.998-3.723 3.723.997 4.72-2.725zM16.402 11.323 9.793 7.507 8.197 1.55l4.72 2.725.998 3.723 3.723-.997 4.72 2.725z"></path></g></svg>Ask AI</button>
                 </div>
+                    <button class="language-btn"><svg data-v-f43039ca="" data-v-54cabfc9="" class="h-icon" aria-hidden="true" style="color: currentcolor; width: 18px; height: 18px; border-radius: var(--h-border-radius-full); border: 1px solid var(--h-stroke-default);" fill="#18181A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"><defs><symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" id="ic-flag-united-states-circle-16"><g clip-path="url(#ic-flag-united-states-circle-16_a)" fill="none"><path fill="#F0F0F0" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path><path fill="#D80027" d="M7.652 8H16c0-.722-.096-1.422-.276-2.087H7.652zM7.652 3.826h7.174A8 8 0 0 0 12.98 1.74H7.652zM8 16c1.883 0 3.613-.65 4.98-1.74H3.02A7.97 7.97 0 0 0 8 16M1.174 12.174h13.652a8 8 0 0 0 .898-2.087H.276c.2.744.505 1.445.898 2.087"></path><path fill="#0052B4" d="M3.706 1.25h.729l-.678.492.259.797-.678-.493-.679.493.224-.689a8 8 0 0 0-1.551 1.73h.233l-.431.313a8 8 0 0 0-.194.342l.206.635-.384-.28q-.144.305-.262.621l.227.7h.838l-.678.492.26.797-.679-.493-.406.295Q0 7.492 0 8h8V0C6.42 0 4.946.458 3.706 1.25m.31 5.95-.678-.493-.679.493.26-.797-.679-.493h.839l.259-.797.259.797h.838l-.678.493zm-.26-3.128.26.798-.678-.493-.679.493.26-.798-.679-.492h.839l.259-.797.259.797h.838zM6.887 7.2l-.679-.493-.678.493.26-.797-.679-.493h.838l.26-.797.258.797h.838l-.678.493zm-.26-3.128.26.798-.679-.493-.678.493.26-.798-.679-.492h.838l.26-.797.258.797h.838zm0-2.33.26.797-.679-.493-.678.493.26-.797-.679-.493h.838l.26-.797.258.797h.838z"></path></g><defs><clipPath id="ic-flag-united-states-circle-16_a"><path fill="#fff" d="M0 0h16v16H0z"></path></clipPath></defs></symbol></defs><g><g clip-path="url(#ic-flag-united-states-circle-16_a)" fill="none"><path fill="#F0F0F0" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path><path fill="#D80027" d="M7.652 8H16c0-.722-.096-1.422-.276-2.087H7.652zM7.652 3.826h7.174A8 8 0 0 0 12.98 1.74H7.652zM8 16c1.883 0 3.613-.65 4.98-1.74H3.02A7.97 7.97 0 0 0 8 16M1.174 12.174h13.652a8 8 0 0 0 .898-2.087H.276c.2.744.505 1.445.898 2.087"></path><path fill="#0052B4" d="M3.706 1.25h.729l-.678.492.259.797-.678-.493-.679.493.224-.689a8 8 0 0 0-1.551 1.73h.233l-.431.313a8 8 0 0 0-.194.342l.206.635-.384-.28q-.144.305-.262.621l.227.7h.838l-.678.492.26.797-.679-.493-.406.295Q0 7.492 0 8h8V0C6.42 0 4.946.458 3.706 1.25m.31 5.95-.678-.493-.679.493.26-.797-.679-.493h.839l.259-.797.259.797h.838l-.678.493zm-.26-3.128.26.798-.678-.493-.679.493.26-.798-.679-.492h.839l.259-.797.259.797h.838zM6.887 7.2l-.679-.493-.678.493.26-.797-.679-.493h.838l.26-.797.258.797h.838l-.678.493zm-.26-3.128.26.798-.679-.493-.678.493.26-.798-.679-.492h.838l.26-.797.258.797h.838zm0-2.33.26.797-.679-.493-.678.493.26-.797-.679-.493h.838l.26-.797.258.797h.838z"></path></g><defs><clippath id="ic-flag-united-states-circle-16_a"><path fill="#fff" d="M0 0h16v16H0z"></path></clippath></defs></g></svg> EN</button>
+                <a href="" class="login-icon"><svg data-v-f43039ca="" class="h-icon" aria-hidden="true" style="color: var(--h-fg-neutral-default); width: 24px; height: 24px;" fill="#18181A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ic-user-24"><path fill="#331C74" fill-rule="evenodd" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0m-2 0a1.75 1.75 0 1 1-3.5 0 1.75 1.75 0 0 1 3.5 0M11.939 12.5h.122c3.58 0 6.79 2.2 8.083 5.538a1.625 1.625 0 0 1-1.516 2.212H5.372a1.625 1.625 0 0 1-1.516-2.212A8.67 8.67 0 0 1 11.94 12.5m0 2h.122a6.67 6.67 0 0 1 5.995 3.75H5.944a6.67 6.67 0 0 1 5.995-3.75" clip-rule="evenodd"></path></symbol></defs><g><path fill="#331C74" fill-rule="evenodd" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0m-2 0a1.75 1.75 0 1 1-3.5 0 1.75 1.75 0 0 1 3.5 0M11.939 12.5h.122c3.58 0 6.79 2.2 8.083 5.538a1.625 1.625 0 0 1-1.516 2.212H5.372a1.625 1.625 0 0 1-1.516-2.212A8.67 8.67 0 0 1 11.94 12.5m0 2h.122a6.67 6.67 0 0 1 5.995 3.75H5.944a6.67 6.67 0 0 1 5.995-3.75" clip-rule="evenodd"></path></g></svg></a>
             </div>
         </div>
     </header>
-    
+    <section class="hero">
+        <div class="sub-menu">
+            <div class="container-submenu">
+                <ul class="sub-menu__list">
+                    <a href="">All Blogs</a>
+                    <a href="">Clients</a>
+                    <a href="">Daily Life</a>
+                    <a href="">WordPress</a>
+                    <a href="">Engineering</a>
+                    <a href="">Insights</a>
+                </ul>
+                <button class="search-btn">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="first-block">
+            <div class="container">
+                <div class="column-img">
+                    <img src="" alt="">
+                </div>
+                <div class="column-right">
+                    <div class="text">
+                        <p>FEATURED STORY</p>
+                        <h3>
+                            <a href="">Hostinger brings Hermes Agent's developer-first power to everyday users</a>
+                        </h3>
+                        <p>Hostinger launches Managed Hermes Agent, a service that makes the advanced, developer-grade
+                            AI agent simple enough for anyone to set up and use. Personal AI agents are becoming...</p>
+                    </div>
+                    <div class="author-container">
+                        <div class="author-avatar">
+
+                        </div>
+                        <div class="author-info">
+                            <p>Gediminas G</p>
+                            <p>Jun 10, 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <h2>Clients</h2>
+            <p>Discover the stories of real-life heroes that look their dreams and ideas online with Hostinger.</p>
+            <div class="three-post-section">
+                <div class="content-flex-column">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                    <div class="flex-column-text">
+                        <div class="text-justify">
+                            <p class="text-post-colum">19 Jul
+                                <span class="post-separator">.</span>
+                                <a class="text-post-colum">CLIENT STORIES</a>
+                                <span class="post-separator">.</span>
+                                <a class="text-post-colum">CUSTOMER SPOTLIGTH</a>
+                                <span class="post-separator">.</span>
+                                5 min
+                            </p>
+                        </div>
+                        <h5 class="text-center">
+                            <a href="">Girl on a Zebra: How Oliver and Carae built a travel blog with 156K monthly
+                                readers</a>
+                        </h5>
+                        <p class="text-grey">Oliver and Carae had no shortage of business ideas. Over the years, the
+                            travel-loving couple experimented with everything from an eco-friendly swimsuit brand to
+                            plans for opening …</p>
+                    </div>
+                </div>
+                <div class="content-flex-column">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                    <div class="text-justify">
+                        <p class="text-post-colum">24 Jul
+                            <span class="post-separator">.</span>
+                            <a class="text-post-colum">CLIENT STORIES</a>
+                            <span class="post-separator">.</span>
+                            <a class="text-post-colum">CUSTOMER SPOTLIGTH</a>
+                            <span class="post-separator">.</span>
+                            6 min
+                        </p>
+                    </div>
+                    <h5 class="text-center">
+                        <a href="">OliveAura: From a home cook's pantry staple to a growing olive oil brand</a>
+                    </h5>
+                    <p class="text-grey">Prem Pithwa spends his days on aerospace and automotive engineering. Off the
+                        clock, he's working on his passion project: delivering high-quality extra virgin olive oil
+                        through Oli…</p>
+                </div>
+                <div class="content-flex-column">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                    <div class="text-justify">
+                        <p class="text-post-colum">15 Jul
+                            <span class="post-separator">.</span>
+                            <a class="text-post-colum">CLIENT STORIES</a>
+                            <span class="post-separator">.</span>
+                            <a class="text-post-colum">CUSTOMER SPOTLIGTH</a>
+                            <span class="post-separator">.</span>
+                            6 min
+                        </p>
+                    </div>
+                    <h5 class="text-center">
+                        <a href="">Rajut Nusa: Transforming discarded plastic bags into sustainable livelihoods</a>
+                    </h5>
+                    <p class="text-grey">Natalia Wibowo, better known as Lia, witnessed the growing plastic waste problem in her hometown of Yogyakarta, Indonesia. While practical solutions remained few and far between, …</p>
+                </div>
+            </div>
+            <div class="text-view">
+                <a href="">View All</a>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
