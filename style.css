@@ -28,7 +28,8 @@
     top: 0;
     left: 0;
     padding: 16px 40px;
-    height: 72px;
+    min-height: 72px;
+    max-height: 72px;
 }
 
 .navigation-section__left{
@@ -40,6 +41,10 @@
 
 .icon-h-hostinger{
     cursor: pointer;
+}
+
+.icon-h-mobile{
+    display: none;
 }
 .navigation-section__start{
     display: flex;
@@ -59,16 +64,18 @@
     padding: 0px 12px;
     gap: 8px;
 }
-
+.menu-navigation:hover{
+    color: #606061;
+}
 .navigation-section__right{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+/*     align-items: center;  */
     gap: 8px;
+    height: 44px;
 }
 
 .gradient-btn{
-    display: inline-flex;
+    display: flex;
     padding: 2px;
     border-radius: 999px;
     background: linear-gradient(90deg, #FF6B6B, #6B5BFF);
@@ -98,7 +105,82 @@
     background-color: #fff;
     font-size: 14px;
     cursor: pointer;
+    width: fit-content;
+    min-width: max-content;
 }
+.language-btn .h-icon{
+    margin: 2px 0px 0px;
+    border: 1px solid #0000001a;
+    width: 18px;
+    height: 18px;
+}
+
+.language-btn:hover{
+    background-color: #e5e5e5;
+}
+
+.login-icon{
+    color:#333;
+    display: flex;
+    align-items: center;
+}
+.login-icon:hover{
+    color: #6b6b6b ;
+    cursor:pointer;
+}
+
+.menu-icon-displaynone {
+    display: none;
+}
+
+@media screen and (max-width:1140px){
+    .header-container{
+        width: 100%;
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        min-height: 58px;
+        max-height: 58px;
+    }
+    .gradient-btn{
+        padding: 2px;
+        height: 38px;
+    }
+    .ask-btn{
+        padding: 4px 16px;
+        height: 34px;
+    }
+    .language-btn  {
+        display:none;
+    }
+    .login-icon {
+        display: none;
+    }
+    .menu-icon-displaynone{
+        display: block;
+        color:#333;
+        display: flex;
+        align-items: center;
+    }
+    .menu-icon-displaynone:hover{
+        cursor:default;
+    }
+    .icon-h-hostinger{
+        display: none;
+    }
+    .icon-h-mobile{
+        display: flex;
+        justify-content: space-between;
+        width: 32px;
+        height: 32px;
+    }
+    .navigation-section__start{
+        display: none;
+    }
+}
+
+
+
 
 .hero{
     width: 100%;
