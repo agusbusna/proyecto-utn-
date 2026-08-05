@@ -317,7 +317,7 @@
         width: 100%;
     }
     .container-submenu{
-        width: 575px;
+        width: 100%;
         margin: 0;
     }
     .header-container{
@@ -507,8 +507,6 @@
         align-items: center;
         flex: 1; 
     }
-    .img-hero{
-    }
     .author-container{
         flex-direction: column;
         align-items: center;
@@ -674,7 +672,6 @@ h2{
     }
     .container-clients{
         width: 100%;
-    /*     text-align: center; */
         align-items: center;
     }
     h2{
